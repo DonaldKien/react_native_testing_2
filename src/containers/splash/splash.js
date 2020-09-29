@@ -7,8 +7,12 @@ const App = ({navigation}) => {
 	return (
 		<Fragment>
 			<BackgroundColor>
-				<Touchable onPress={() => navigation.navigate('Landing')} >
-					<Logo source={logo}/>
+				<Touchable 
+					onPress={() => navigation.navigate('Landing')} 
+				>
+					<Logo 
+						source={logo}
+					/>
 				</Touchable>
 			</BackgroundColor>
 		</Fragment>
