@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
-import styled from 'styled-components';
 import logo from '@assets/image/logo1.jpg';
+import { BackgroundColor, Touchable, Logo } from '@containers/splash/style-splash';
 
 const App = ({navigation}) => {
 
@@ -14,22 +14,6 @@ const App = ({navigation}) => {
 		</Fragment>
 	);
 };
-
-const BackgroundColor = styled.View`
-	background-color: #121C2F;
-	flex: 1;
-`;
-
-const Touchable = styled.TouchableOpacity`
-	background-color: white;
-	margin: auto;
-`;
-
-const Logo = styled.Image`
-	margin: auto;
-	height: 200px;
-	width: 200px;
-`;
 
 
 export default App;

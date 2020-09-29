@@ -8,7 +8,7 @@ module.exports = {
         "@components": "./src/components",
         "@redux": "./src/redux",
         "@routing": "./src/routing",
-        "@styling": "./src/styling",
+        "@common": "./src/common",
         "@assets": "./src/assets"
       }
     }]

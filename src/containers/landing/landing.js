@@ -1,10 +1,11 @@
 import React, {useState, Fragment} from 'react';
 import logo from '../../assets/image/logo1.jpg';
-import styled from 'styled-components';
 import { Content } from 'native-base';
-import { BackgroundColor, Title, Logo, TextInputLabel, TextInputBox, InputText, Link, ButtonClick, ButtonText } from '@styling/styling';
-import { TextInputBoxComponent, ButtonComponent, LinkComponent, TitleComponent } from '@components/components';
-// import { ButtonComponent } from '../../components/customButtons/customButtons';
+import { BackgroundColor, Logo } from '@common/styling';
+import { ButtonComponent } from '@components/custom-buttons/custom-buttons';
+import { TextInputBoxComponent } from '@components/text-input/text-input';
+import { TitleComponent, LinkComponent } from '@components/title/title';
+import { TitleWrapper, LogoWrapper, TextInputBoxWrapper, ButtonWrapper, LinkWrapper } from '@containers/landing/style-landing';
 
 const landing = ({navigation}) => {
 
@@ -137,36 +138,5 @@ const landing = ({navigation}) => {
         </Fragment>
     )
 }
-
-const TitleWrapper = styled.View`
-    margin: 30px auto;
-`
-
-const LogoWrapper = styled.View`
-    margin: 10px auto;
-`
-const TextInputBoxWrapper = styled.View`
-    margin: 10px auto 5px auto;
-`
-
-const ButtonWrapper = styled.View`
-    margin: 10px auto 0px auto;
-`
-
-const LinkWrapper = styled.View`
-    margin: 5px auto;
-`
-
-// function mapStateToProps (state) {
-//     return { pressLink: state.linkPressed }
-// }
-
-// function mapDispatchToProps (dispatch) {
-//     return {
-//         pressedLink: () => dispatch({type: 'LINKPRESSED'})
-//     }
-// }
-
-// export default connect(mapStateToProps, mapDispatchToProps) (landing);
 
 export default landing;

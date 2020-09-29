@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, TextInputLabel, TextInputBox, InputText, Link, ButtonClick, ButtonText, ButtonClick2, TextInputBoxLarge, Subtitle } from '../../styling/styling';
+import { ButtonClick, ButtonText, ButtonClick2 } from '@components/custom-buttons/style-custom-buttons';
 
 
 export const ButtonComponent = props => {

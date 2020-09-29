@@ -1,12 +1,12 @@
 import React, {useState, Fragment} from 'react';
 import { Content } from 'native-base';
-import styled from 'styled-components';
-import { Image, TouchableOpacity, View } from 'react-native';
-import { BackgroundColor, Title, Subtitle, DefaultImage, TextInputBox, ImageInput, ImageTouchable, TextInputBoxLarge, TextInputLabel, InputText, ButtonClick2, ButtonText } from '@styling/styling';
+import { BackgroundColor } from '../../common/styling';
 import ImagePicker from 'react-native-image-picker';
-import imageDefault from '../../assets/image/addImage.png';
-import { ButtonSmallComponent, TextInputBoxAreaComponent, TextInputBoxComponent, TitleComponent, SubtitleComponent } from '@components/components';
-
+import imageDefault from '@assets/image/addImage.png';
+import { TitleComponent, SubtitleComponent } from '@components/title/title';
+import { ButtonSmallComponent } from '@components/custom-buttons/custom-buttons';
+import { TextInputBoxComponent, TextInputBoxAreaComponent } from '@components/text-input/text-input';
+import { TitleBarWrapper, ChannelImageWrapper, TextInputBoxWrapper, TextInputBoxWrapperLarge, ButtonWrapper, ImageInput, ImageTouchable, DefaultImage } from '@containers/onboard/style-onboard';
 
 const onboard = ({navigation}) => {
     
@@ -81,35 +81,5 @@ const onboard = ({navigation}) => {
     )
 }
 
-const TitleBarWrapper = styled.View`
-    flex: 1;
-    padding-top: 5px;
-    padding-left: 10px;
-`
-
-const ChannelImageWrapper = styled.View`
-    margin-top: 15px;   
-    flex: 3;
-    justify-content: center;
-    align-items: center;
-`
-const TextInputBoxWrapper = styled.View`
-    margin-top: 15px;   
-    flex: 1;
-    align-items: center;
-`
-
-const TextInputBoxWrapperLarge = styled.View`
-    margin-top: 15px;   
-    flex: 2;
-    align-items: center;
-`
-
-const ButtonWrapper = styled.View`
-    flex: 3;
-    align-items: center;
-    padding-top: 20px;
-
-`
 
 export default onboard;

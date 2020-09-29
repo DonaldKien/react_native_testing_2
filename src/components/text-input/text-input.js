@@ -1,5 +1,6 @@
 import React from 'react';
-import { Title, TextInputLabel, TextInputBox, InputText, Link, ButtonClick, ButtonText, ButtonClick2, TextInputBoxLarge, Subtitle } from '../styling/styling';
+import { TextInputLabel, TextInputBox, InputText, TextInputBoxLarge } from '@components/text-input/style-text-input';
+
 
 export const TextInputBoxComponent = props => {
     const { boxFocus, checkError, text, onBlur, onFocus, onChangeText, value, keyboardType, textContentType, secureTextEntry } = props;
@@ -19,36 +20,6 @@ export const TextInputBoxComponent = props => {
     )
 }
 
-export const ButtonComponent = props => {
-    return (
-        <ButtonClick inputColor={props.inputColor}>
-            <ButtonText onPress={props.onPress}>{props.text}</ButtonText>
-        </ButtonClick>
-    )
-}
-
-export const LinkComponent = props => {
-    return (
-        <Link inputColor={props.inputColor} onPress={props.onPress}>
-            {props.text}
-        </Link>
-    )
-}
-
-export const TitleComponent = props => {
-    return (
-        <Title inputColor={props.inputColor}>{props.text}</Title>
-    )
-}
-
-export const ButtonSmallComponent = props => {
-    return (
-        <ButtonClick2 onPress={props.onPress}>
-            <ButtonText>{props.text}</ButtonText>
-        </ButtonClick2>
-    )
-}
-
 export const TextInputBoxAreaComponent = props => {
     return (
         <TextInputBoxLarge>
@@ -58,11 +29,5 @@ export const TextInputBoxAreaComponent = props => {
                     numberOfLines={props.numberOfLines}
                 />
         </TextInputBoxLarge>
-    )
-}
-
-export const SubtitleComponent = props => {
-    return (
-        <Subtitle>{props.text}</Subtitle>
     )
 }

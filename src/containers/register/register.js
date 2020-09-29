@@ -1,7 +1,10 @@
 import React, {useState, Fragment} from 'react';
-import styled from 'styled-components';
-import { BackgroundColor, Title, Logo, TextInputBox, TextInputLabel, InputText, Link, ButtonClick, ButtonText } from '@styling/styling';
-import { ButtonComponent, LinkComponent, TitleComponent, TextInputBoxComponent } from '@components/components';
+import { BackgroundColor } from '@common/styling';
+import { ButtonComponent } from '@components/custom-buttons/custom-buttons';
+import { TextInputBoxComponent } from '@components/text-input/text-input';
+import { TitleComponent, LinkComponent } from '@components/title/title'; 
+import { TitleWrapper, TextInputBoxWrapper, LinkWrapper, ButtonWrapper } from '@containers/register/style-register'
+
 
 const register = ({ navigation }) => {
 
@@ -61,22 +64,5 @@ const register = ({ navigation }) => {
     )
 }
 
-const TitleWrapper = styled.View`
-    margin: 20px auto 10px 10px;
-`
-
-const TextInputBoxWrapper = styled.View`
-    margin: 10px auto 5px auto;
-`
-
-const LinkWrapper = styled.View`
-    margin: 10px auto;
-
-`
-
-const ButtonWrapper = styled.View`
-    margin: 10px auto;
-
-`
 
 export default register;
